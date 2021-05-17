@@ -30,6 +30,7 @@
 	],
 	"main": "dist/index.js",
 	"style": "dist/index.css",
+	"types": "dist/index.d.ts",
 	"repository": "https://github.com/scriptex/react-round-carousel",
 	"scripts": {
 		"clear": "rm -rf dist",

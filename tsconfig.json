@@ -31,7 +31,7 @@
 		"strictFunctionTypes": true,
 		"strictPropertyInitialization": true,
 		"strictNullChecks": true,
-		"sourceMap": true,
+		"sourceMap": false,
 		"target": "es5",
 		"typeRoots": ["node_modules/@types"]
 	},
