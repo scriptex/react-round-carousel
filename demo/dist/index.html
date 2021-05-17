@@ -9,12 +9,7 @@
 
 		<link rel="stylesheet" href="/index.cb3d970c.css">
 
-		<style>html,
-			body {
-				height: 100%;
-			}
-
-			body {
+		<style>body {
 				font-family: monospace;
 				display: flex;
 				flex-flow: row wrap;
@@ -26,28 +21,43 @@
 
 			.usage {
 				line-height: 1.1;
-				max-width: 800px;
+				width: 100%;
+				max-width: 50rem;
 				flex: 0 0 100%;
-				padding: 16px 32px;
+				padding: 1rem;
 				margin: auto;
+				box-sizing: border-box;
 			}
 
 			.usage p,
 			.usage h1,
 			.usage h2 {
-				margin: 16px 0;
-			}
-
-			.usage pre {
-				margin: 0;
+				margin: 1rem 0;
 			}
 
 			.usage h1 {
 				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+			.usage pre {
+				margin: 0;
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+			}
+
+			.usage h2 + pre {
+				margin-top: -1rem;
 			}
 
 			#root {
 				flex: 0 0 100%;
+				padding-bottom: 3rem;
+				overflow: hidden;
+			}
+
+			.carousel__controls {
+				padding-top: 2rem;
 			}
 </style>
 	</head>
@@ -74,7 +84,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Carousel, CarouselItem } from '../dist/index';
+import { Carousel, CarouselItem } from 'react-round-carousel';
 
 // Create an array of Carousel Items
 const items: CarouselItem[] = Array(20)
