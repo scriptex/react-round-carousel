@@ -19,4 +19,4 @@ Thumbs.db
 
 # Project specific
 .parcel-cache
-dist
+/dist
