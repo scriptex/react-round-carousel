@@ -21,11 +21,83 @@
 				flex-flow: row wrap;
 				align-items: center;
 				justify-content: center;
+				align-content: center;
 				margin: 0;
+			}
+
+			.usage {
+				line-height: 1.1;
+				max-width: 800px;
+				flex: 0 0 100%;
+				padding: 16px 32px;
+				margin: auto;
+			}
+
+			.usage p,
+			.usage h1,
+			.usage h2 {
+				margin: 16px 0;
+			}
+
+			.usage pre {
+				margin: 0;
+			}
+
+			.usage h1 {
+				text-align: center;
+			}
+
+			#root {
+				flex: 0 0 100%;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="usage">
+			<h1>React Round Carousel</h1>
+
+			<h2>Install</h2>
+
+			<code>npm install react-round-carousel</code>
+
+			<br />
+
+			<em>or</em>
+
+			<br />
+
+			<code>yarn add react-round-carousel</code>
+
+			<h2>Use the module</h2>
+
+			<pre>
+        <code>
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import { Carousel, CarouselItem } from '../dist/index';
+
+// Create an array of Carousel Items
+const items: CarouselItem[] = Array(20)
+  .fill('')
+  .map((_: string, index: number) => ({
+    alt: 'A random Unsplash photo',
+    image: 'https://source.unsplash.com/random/210x210',
+    content: (
+      &lt;div&gt;
+        &lt;strong&gt;Round Carousel&lt;/strong&gt;
+        &lt;span&gt;Slide number {index + 1}&lt;/span&gt;
+      &lt;/div&gt;
+    )
+  }));
+
+const App = () => &lt;Carousel items={items} /&gt;;
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
+        </code>
+      </pre>
+		</div>
+
 		<div id="root"></div>
 
 		<script src="./index.tsx"></script>
