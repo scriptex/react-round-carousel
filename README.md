@@ -21,7 +21,7 @@
 [![Renovate App Status][renovateapp-img]][renovateapp-url]
 [![Make A Pull Request][prs-welcome-img]][prs-welcome-url]
 
-<img src="https://raw.githubusercontent.com/scriptex/react-round-carousel/master/screenshot.png" alt="Screen    shot of the React Round Carousel component" />
+[![Demo](https://raw.githubusercontent.com/scriptex/react-round-carousel/master/screenshot.png)](https://react-round-carousel.vercel.app/)
 
 This is an infinitely scrollable 3D carousel component which can be used in a React application.
 

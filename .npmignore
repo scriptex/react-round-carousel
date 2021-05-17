@@ -43,6 +43,7 @@ yarn.lock
 .nvmrc
 .stylelintrc
 .whitesource
+now.json
 renovate.json
 tslint.json
 tsconfig.json
