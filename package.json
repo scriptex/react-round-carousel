@@ -1,11 +1,11 @@
 {
-	"name": "initial-commit",
-	"version": "0.1.2",
-	"description": "Starting template for repository",
+	"name": "react-round-carousel",
+	"version": "0.0.1",
+	"description": "An infinitely scrollable 3D carousel component for React",
 	"keywords": [],
-	"homepage": "https://atanas.info/projects/initial-commit.html",
+	"homepage": "https://atanas.info/projects/react-round-carousel.html",
 	"bugs": {
-		"url": "https://github.com/scriptex/initial-commit/issues",
+		"url": "https://github.com/scriptex/react-round-carousel/issues",
 		"email": "scriptex.bg@gmail.com"
 	},
 	"license": "MIT",
@@ -28,22 +28,61 @@
 			"url": "https://ko-fi.com/scriptex"
 		}
 	],
-	"main": "index.js",
-	"repository": "https://github.com/scriptex/initial-commit",
+	"main": "dist/index.js",
+	"style": "dist/index.css",
+	"repository": "https://github.com/scriptex/react-round-carousel",
 	"scripts": {
-		"test": "echo 'No tests found'",
+		"clear": "rm -rf dist",
+		"start": "tsc -w",
+		"build": "yarn clear && tsc && cp src/index.css dist/index.css",
+		"test": "jest",
+		"lint": "yarn lint:ts && yarn lint:scss",
+		"lint:ts": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"lint:scss": "stylelint ./**/*.css",
+		"prod": "yarn lint && yarn test && yarn build",
 		"release-minor": "release-it minor --ci",
 		"release-patch": "release-it patch --ci",
 		"release-major": "release-it major --ci",
 		"changelog-local": "npx auto-changelog"
 	},
-	"dependencies": {
-		"release-it": "14.6.2"
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "26.0.23",
+		"@types/react": "17.0.5",
+		"@types/react-dom": "17.0.5",
+		"@types/react-test-renderer": "17.0.1",
+		"@typescript-eslint/eslint-plugin": "4.23.0",
+		"@typescript-eslint/parser": "4.23.0",
+		"eslint": "7.26.0",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-plugin-react": "7.23.2",
+		"eslint-plugin-react-hooks": "4.2.0",
+		"jest": "26.6.3",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-test-renderer": "17.0.1",
+		"release-it": "14.6.2",
+		"stylelint": "13.13.1",
+		"stylelint-config-recommended": "5.0.0",
+		"touchsweep": "1.2.0",
+		"ts-jest": "26.5.6",
+		"typescript": "4.2.4"
 	},
-	"devDependencies": {},
-	"peerDependencies": {},
-	"browserslist": [],
-	"private": true,
+	"peerDependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js"
+		],
+		"transform": {
+			"\\.(ts|tsx)$": "ts-jest"
+		},
+		"testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+	},
 	"release-it": {
 		"hooks": {
 			"after:release": "yarn changelog-local && git add CHANGELOG.md && git commit -m \"Update CHANGELOG.md with the latest changes\" && git push"

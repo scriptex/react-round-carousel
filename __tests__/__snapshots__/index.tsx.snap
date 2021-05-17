@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion should render properly with default props 1`] = `
+Array [
+  <div
+    className="carousel"
+  >
+    <div
+      className="carousel__container"
+      style={
+        Object {
+          "transform": "translateZ(-663px) rotateY(0deg)",
+        }
+      }
+    >
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(0deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(18deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              2
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(36deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              3
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(54deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              4
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(72deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(90deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              6
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(108deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              7
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(126deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              8
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(144deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              9
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(162deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              10
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(180deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              11
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(198deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              12
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(216deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              13
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(234deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              14
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(252deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              15
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(270deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              16
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(288deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              17
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(306deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              18
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(324deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              19
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="carousel__slide"
+        style={
+          Object {
+            "opacity": 1,
+            "transform": "rotateY(342deg) translateZ(663px)",
+          }
+        }
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://source.unsplash.com/random/210x210"
+        />
+        <div
+          className="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 
+              20
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="carousel__controls"
+  >
+    <button
+      className="carousel__control carousel__control--prev"
+      onClick={[Function]}
+    >
+      Previous
+    </button>
+    <button
+      className="carousel__control carousel__control--next"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>,
+]
+`;
