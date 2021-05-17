@@ -389,36 +389,13 @@ helpers.prelude(module);
 try {
 var _react = require("react");
 var _reactDom = require("react-dom");
+var _mocks = require("./mocks");
 var _index = require("../dist/index");
-const items = Array(20).fill('').map((_, index)=>({
-        alt: 'A random Unsplash photo',
-        image: 'https://source.unsplash.com/random/210x210',
-        content: /*#__PURE__*/ _react.createElement("div", {
-            __source: {
-                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/index.tsx",
-                lineNumber: 12
-            },
-            __self: undefined
-        }, /*#__PURE__*/ _react.createElement("strong", {
-            __source: {
-                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/index.tsx",
-                lineNumber: 13
-            },
-            __self: undefined
-        }, "Round Carousel"), /*#__PURE__*/ _react.createElement("span", {
-            __source: {
-                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/index.tsx",
-                lineNumber: 14
-            },
-            __self: undefined
-        }, "Slide number ", index + 1))
-    })
-);
 const App = ()=>/*#__PURE__*/ _react.createElement(_index.Carousel, {
-        items: items,
+        items: _mocks.items,
         __source: {
             fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/index.tsx",
-            lineNumber: 19
+            lineNumber: 7
         },
         __self: undefined
     })
@@ -426,7 +403,7 @@ const App = ()=>/*#__PURE__*/ _react.createElement(_index.Carousel, {
 _reactDom.render(/*#__PURE__*/ _react.createElement(App, {
     __source: {
         fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/index.tsx",
-        lineNumber: 21
+        lineNumber: 9
     },
     __self: undefined
 }), document.getElementById('root'));
@@ -436,7 +413,7 @@ _reactDom.render(/*#__PURE__*/ _react.createElement(App, {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3f97z","react-dom":"PWMei","../dist/index":"3xGG1","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3f97z":[function(require,module,exports) {
+},{"react":"3f97z","react-dom":"PWMei","../dist/index":"3xGG1","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./mocks":"61GTj"}],"3f97z":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
@@ -22212,6 +22189,80 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.register = register;
     exports.setSignature = setSignature;
 })();
+
+},{}],"61GTj":[function(require,module,exports) {
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "items", ()=>items
+);
+var _react = require("react");
+const items = Array(20).fill('').map((_, index)=>({
+        alt: 'A random Unsplash photo',
+        image: 'https://source.unsplash.com/random/210x210',
+        content: /*#__PURE__*/ _react.createElement("div", {
+            __source: {
+                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/mocks.tsx",
+                lineNumber: 10
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _react.createElement("strong", {
+            __source: {
+                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/mocks.tsx",
+                lineNumber: 11
+            },
+            __self: undefined
+        }, "Round Carousel"), /*#__PURE__*/ _react.createElement("span", {
+            __source: {
+                fileName: "/Users/devmachine1/server/projects/react-round-carousel/demo/mocks.tsx",
+                lineNumber: 12
+            },
+            __self: undefined
+        }, "Slide number ", index + 1))
+    })
+);
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3f97z","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"367CR":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule') return;
+        // Skip duplicate re-exports when they have the same value.
+        if (key in dest && dest[key] === source[key]) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["7yJK4","4vasa"], "4vasa", "parcelRequiredb74")
 
