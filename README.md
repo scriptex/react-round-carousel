@@ -23,7 +23,7 @@
 
 [![Demo](https://raw.githubusercontent.com/scriptex/react-round-carousel/master/screenshot.png)](https://react-round-carousel.vercel.app/)
 
-This is an infinitely scrollable 3D carousel component which can be used in a React application.
+This is an infinitely scrollable, touch enabled, 3D, image carousel component which can be used in a React application.
 
 ## Install
 
@@ -78,14 +78,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 The component accepts the following configuration options as props:
 
-| Prop                | Type           | Required   | Description                                     | Default    |
-| ------------------- | -------------- | ---------- | ----------------------------------------------- | ---------- |
-| `classNamePrefix`   | `string`       | false      | CSS classname prefix for the Carousel component | 'carousel' |
-| `items`             | `CarouselItem` | true       | An array of `CarouselItem`s                     | []         |
-| `itemWidth`         | `number`       | false      | Width of each of the carousel items             | 210        |
-| `nextButtonContent` | `string        | ReactNode` | Content of the next button                      | 'Next'     |
-| `prevButtonContent` | `string        | ReactNode` | Content of the previous button                  | 'Previous' |
-| `showControls`      | `boolean`      | false      | Show/hide navigation controls                   | true       |
+| Prop                | Type               | Required | Description                                     | Default    |
+| ------------------- | ------------------ | -------- | ----------------------------------------------- | ---------- |
+| `classNamePrefix`   | `string`           | false    | CSS classname prefix for the Carousel component | 'carousel' |
+| `items`             | `CarouselItem`     | true     | An array of `CarouselItem`s                     | []         |
+| `itemWidth`         | `number`           | false    | Width of each of the carousel items             | 210        |
+| `nextButtonContent` | `string/ReactNode` | false    | Content of the next button                      | 'Next'     |
+| `prevButtonContent` | `string/ReactNode` | false    | Content of the previous button                  | 'Previous' |
+| `showControls`      | `boolean`          | false    | Show/hide navigation controls                   | true       |
 
 ## Support this project
 
