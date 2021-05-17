@@ -1,0 +1,103 @@
+{
+	"name": "initial-commit",
+	"version": "0.1.2",
+	"description": "Starting template for repository",
+	"keywords": [],
+	"homepage": "https://atanas.info/projects/initial-commit.html",
+	"bugs": {
+		"url": "https://github.com/scriptex/initial-commit/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Atanas Atanasov",
+		"email": "scriptex.bg@gmail.com",
+		"url": "https://atanas.info"
+	},
+	"funding": [
+		{
+			"type": "individual",
+			"url": "https://www.paypal.me/scriptex"
+		},
+		{
+			"type": "patreon",
+			"url": "https://www.patreon.com/atanas"
+		},
+		{
+			"type": "individual",
+			"url": "https://ko-fi.com/scriptex"
+		}
+	],
+	"main": "index.js",
+	"repository": "https://github.com/scriptex/initial-commit",
+	"scripts": {
+		"test": "echo 'No tests found'",
+		"release-minor": "release-it minor --ci",
+		"release-patch": "release-it patch --ci",
+		"release-major": "release-it major --ci",
+		"changelog-local": "npx auto-changelog"
+	},
+	"dependencies": {
+		"release-it": "14.6.2"
+	},
+	"devDependencies": {},
+	"peerDependencies": {},
+	"browserslist": [],
+	"private": true,
+	"release-it": {
+		"hooks": {
+			"after:release": "yarn changelog-local && git add CHANGELOG.md && git commit -m \"Update CHANGELOG.md with the latest changes\" && git push"
+		},
+		"git": {
+			"changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+			"requireCleanWorkingDir": true,
+			"requireBranch": false,
+			"requireUpstream": false,
+			"requireCommits": false,
+			"addUntrackedFiles": false,
+			"commit": true,
+			"commitMessage": "Release ${version}",
+			"commitArgs": [],
+			"tag": true,
+			"tagName": null,
+			"tagAnnotation": "Release ${version}",
+			"tagArgs": [],
+			"push": true,
+			"pushArgs": [
+				"--follow-tags"
+			],
+			"pushRepo": ""
+		},
+		"npm": {
+			"publish": false,
+			"publishPath": ".",
+			"tag": null,
+			"otp": null,
+			"ignoreVersion": false,
+			"skipChecks": false,
+			"timeout": 10
+		},
+		"github": {
+			"release": false,
+			"releaseName": "Release ${version}",
+			"releaseNotes": null,
+			"preRelease": false,
+			"draft": false,
+			"tokenRef": "GITHUB_TOKEN",
+			"assets": null,
+			"host": null,
+			"timeout": 0,
+			"proxy": null,
+			"skipChecks": false
+		},
+		"gitlab": {
+			"release": false,
+			"releaseName": "Release ${version}",
+			"releaseNotes": null,
+			"tokenRef": "GITLAB_TOKEN",
+			"assets": null,
+			"origin": null,
+			"skipChecks": false
+		}
+	}
+}
