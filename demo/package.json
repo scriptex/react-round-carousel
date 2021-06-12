@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@types/react": "17.0.11",
 		"@types/react-dom": "17.0.7",
-		"parcel": "2.0.0-nightly.716",
+		"parcel": "2.0.0-nightly.718",
 		"typescript": "4.3.2"
 	}
 }
