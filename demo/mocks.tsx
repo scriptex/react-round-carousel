@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { CarouselItem } from '../dist';
 
-export const items: CarouselItem[] = Array(20)
+const AMOUNT = 20;
+
+export const items: CarouselItem[] = Array(AMOUNT)
 	.fill('')
 	.map((_: string, index: number) => ({
 		alt: 'A random Unsplash photo',
-		image: 'https://source.unsplash.com/random/210x210',
+		image: `https://source.unsplash.com/random/210x210?sig=${Math.floor(Math.random() * AMOUNT * 2)}`,
 		content: (
 			<div>
 				<strong>Round Carousel</strong>
