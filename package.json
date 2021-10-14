@@ -54,7 +54,7 @@
 		"@types/react-test-renderer": "17.0.1",
 		"@typescript-eslint/eslint-plugin": "5.0.0",
 		"@typescript-eslint/parser": "5.0.0",
-		"eslint": "8.0.0",
+		"eslint": "8.0.1",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-react": "7.26.1",
 		"eslint-plugin-react-hooks": "4.2.0",
