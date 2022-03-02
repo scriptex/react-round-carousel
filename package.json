@@ -1,6 +1,6 @@
 {
 	"name": "react-round-carousel",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "An infinitely scrollable 3D carousel component for React",
 	"keywords": [],
 	"homepage": "https://atanas.info/projects/react-round-carousel.html",
@@ -34,12 +34,13 @@
 	"repository": "https://github.com/scriptex/react-round-carousel",
 	"scripts": {
 		"clear": "rm -rf dist",
+		"css": "postcss src/index.css -o dist/index.css",
 		"start": "tsc -w",
-		"build": "yarn clear && tsc && cp src/index.css dist/index.css",
+		"build": "yarn clear && yarn css && tsc",
 		"test": "jest",
-		"lint": "yarn lint:ts && yarn lint:scss",
+		"lint": "yarn lint:ts && yarn lint:css",
 		"lint:ts": "eslint . --ext .js,.jsx,.ts,.tsx",
-		"lint:scss": "stylelint ./**/*.css",
+		"lint:css": "stylelint ./**/*.css",
 		"prod": "yarn lint && yarn test && yarn build",
 		"release-minor": "release-it minor --ci",
 		"release-patch": "release-it patch --ci",
@@ -54,24 +55,28 @@
 		"@types/react-test-renderer": "17.0.1",
 		"@typescript-eslint/eslint-plugin": "5.13.0",
 		"@typescript-eslint/parser": "5.13.0",
+		"autoprefixer": "10.4.2",
 		"eslint": "8.10.0",
 		"eslint-config-prettier": "8.4.0",
 		"eslint-plugin-react": "7.29.2",
 		"eslint-plugin-react-hooks": "4.3.0",
 		"jest": "27.5.1",
+		"postcss": "8.4.7",
+		"postcss-cli": "9.1.0",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"react-test-renderer": "17.0.2",
 		"release-it": "14.12.5",
 		"stylelint": "14.5.3",
 		"stylelint-config-recommended": "7.0.0",
-		"touchsweep": "1.2.0",
+		"touchsweep": "1.3.0",
 		"ts-jest": "27.1.3",
 		"typescript": "4.6.2"
 	},
 	"peerDependencies": {
 		"react": "^17.0.1",
-		"react-dom": "^17.0.1"
+		"react-dom": "^17.0.1",
+		"touchsweep": "^1.2.0"
 	},
 	"jest": {
 		"moduleFileExtensions": [
@@ -139,5 +144,9 @@
 			"origin": null,
 			"skipChecks": false
 		}
-	}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
 }
