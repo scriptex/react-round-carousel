@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"start": "parcel index.html",
-		"build": "rm -rf dist && parcel build index.html"
+		"clean": "rm -rf dist",
+		"start": "yarn clean && parcel index.html",
+		"build": "yarn clean && parcel build index.html --no-source-maps"
 	},
 	"dependencies": {},
 	"alias": {
