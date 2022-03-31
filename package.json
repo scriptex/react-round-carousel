@@ -63,9 +63,9 @@
 		"jest": "27.5.1",
 		"postcss": "8.4.12",
 		"postcss-cli": "9.1.0",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"react-test-renderer": "17.0.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-test-renderer": "18.0.0",
 		"release-it": "14.13.1",
 		"stylelint": "14.6.1",
 		"stylelint-config-recommended": "7.0.0",
@@ -74,8 +74,8 @@
 		"typescript": "4.6.3"
 	},
 	"peerDependencies": {
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
 		"touchsweep": "^1.2.0"
 	},
 	"jest": {
