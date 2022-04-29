@@ -60,7 +60,7 @@
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-react": "7.29.4",
 		"eslint-plugin-react-hooks": "4.5.0",
-		"jest": "28.0.2",
+		"jest": "28.0.3",
 		"postcss": "8.4.12",
 		"postcss-cli": "9.1.0",
 		"react": "^18.0.0",
