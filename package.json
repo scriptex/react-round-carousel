@@ -1,6 +1,6 @@
 {
 	"name": "react-round-carousel",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "An infinitely scrollable 3D carousel component for React",
 	"keywords": [],
 	"homepage": "https://atanas.info/projects/react-round-carousel.html",
@@ -74,8 +74,8 @@
 		"typescript": "4.7.4"
 	},
 	"peerDependencies": {
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
+		"react": "^16.9.0 || ^17 || ^18",
+		"react-dom": "^16.9.0 || ^17 || ^18",
 		"touchsweep": "^1.2.0"
 	},
 	"jest": {
