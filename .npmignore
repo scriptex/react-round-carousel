@@ -44,6 +44,7 @@ yarn.lock
 .stylelintrc
 .whitesource
 now.json
+vercel.json
 renovate.json
 tslint.json
 tsconfig.json
