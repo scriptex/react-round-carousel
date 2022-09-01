@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CarouselItem } from '../dist';
+import { CarouselItem } from '../src';
 
 const AMOUNT = 20;
 

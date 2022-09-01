@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Accordion should render properly with default props 1`] = `
-Array [
+[
   <div
     className="carousel"
   >
     <div
       className="carousel__container"
       style={
-        Object {
+        {
           "transform": "translateZ(-663px) rotateY(0deg)",
         }
       }
@@ -16,7 +16,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(0deg) translateZ(663px)",
           }
@@ -43,7 +43,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(18deg) translateZ(663px)",
           }
@@ -70,7 +70,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(36deg) translateZ(663px)",
           }
@@ -97,7 +97,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(54deg) translateZ(663px)",
           }
@@ -124,7 +124,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(72deg) translateZ(663px)",
           }
@@ -151,7 +151,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(90deg) translateZ(663px)",
           }
@@ -178,7 +178,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(108deg) translateZ(663px)",
           }
@@ -205,7 +205,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(126deg) translateZ(663px)",
           }
@@ -232,7 +232,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(144deg) translateZ(663px)",
           }
@@ -259,7 +259,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(162deg) translateZ(663px)",
           }
@@ -286,7 +286,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(180deg) translateZ(663px)",
           }
@@ -313,7 +313,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(198deg) translateZ(663px)",
           }
@@ -340,7 +340,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(216deg) translateZ(663px)",
           }
@@ -367,7 +367,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(234deg) translateZ(663px)",
           }
@@ -394,7 +394,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(252deg) translateZ(663px)",
           }
@@ -421,7 +421,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(270deg) translateZ(663px)",
           }
@@ -448,7 +448,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(288deg) translateZ(663px)",
           }
@@ -475,7 +475,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(306deg) translateZ(663px)",
           }
@@ -502,7 +502,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(324deg) translateZ(663px)",
           }
@@ -529,7 +529,7 @@ Array [
       <div
         className="carousel__slide"
         style={
-          Object {
+          {
             "opacity": 1,
             "transform": "rotateY(342deg) translateZ(663px)",
           }
