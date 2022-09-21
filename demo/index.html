@@ -47,13 +47,10 @@
 			}
 
 			.usage pre {
-				margin: 0;
+				padding: 0.125rem 1rem;
 				overflow: auto;
 				-webkit-overflow-scrolling: touch;
-			}
-
-			.usage h2 + pre {
-				margin-top: -1rem;
+				background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 100%);
 			}
 
 			#root {
@@ -78,22 +75,19 @@
 
 			<h2>Install</h2>
 
-			<code>npm install react-round-carousel</code>
+			<pre><code>
+npm install react-round-carousel
 
-			<br />
+# or
 
-			<em>or</em>
-
-			<br />
-
-			<code>yarn add react-round-carousel</code>
+yarn add react-round-carousel
+			</code></pre>
 
 			<h2>Use the module</h2>
 
-			<pre>
-        <code>
+			<pre><code>
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import { Carousel, CarouselItem } from 'react-round-carousel';
 
@@ -101,8 +95,8 @@ import { Carousel, CarouselItem } from 'react-round-carousel';
 const items: CarouselItem[] = Array(20)
   .fill('')
   .map((_: string, index: number) => ({
-    alt: 'A random Unsplash photo',
-    image: 'https://source.unsplash.com/random/210x210',
+    alt: 'A random photo',
+    image: `https://picsum.photos/${210 + index}`,
     content: (
       &lt;div&gt;
         &lt;strong&gt;Round Carousel&lt;/strong&gt;
@@ -113,9 +107,8 @@ const items: CarouselItem[] = Array(20)
 
 const App = () => &lt;Carousel items={items} /&gt;;
 
-ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
-        </code>
-      </pre>
+createRoot(document.getElementById('root')!).render(&lt;App /&gt;);
+        </code></pre>
 		</div>
 
 		<div id="root"></div>

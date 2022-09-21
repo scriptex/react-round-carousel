@@ -24,7 +24,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/210"
         />
         <div
           className="carousel__slide-overlay"
@@ -51,7 +51,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/211"
         />
         <div
           className="carousel__slide-overlay"
@@ -78,7 +78,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/212"
         />
         <div
           className="carousel__slide-overlay"
@@ -105,7 +105,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/213"
         />
         <div
           className="carousel__slide-overlay"
@@ -132,7 +132,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/214"
         />
         <div
           className="carousel__slide-overlay"
@@ -159,7 +159,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/215"
         />
         <div
           className="carousel__slide-overlay"
@@ -186,7 +186,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/216"
         />
         <div
           className="carousel__slide-overlay"
@@ -213,7 +213,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/217"
         />
         <div
           className="carousel__slide-overlay"
@@ -240,7 +240,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/218"
         />
         <div
           className="carousel__slide-overlay"
@@ -267,7 +267,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/219"
         />
         <div
           className="carousel__slide-overlay"
@@ -294,7 +294,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/220"
         />
         <div
           className="carousel__slide-overlay"
@@ -321,7 +321,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/221"
         />
         <div
           className="carousel__slide-overlay"
@@ -348,7 +348,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/222"
         />
         <div
           className="carousel__slide-overlay"
@@ -375,7 +375,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/223"
         />
         <div
           className="carousel__slide-overlay"
@@ -402,7 +402,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/224"
         />
         <div
           className="carousel__slide-overlay"
@@ -429,7 +429,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/225"
         />
         <div
           className="carousel__slide-overlay"
@@ -456,7 +456,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/226"
         />
         <div
           className="carousel__slide-overlay"
@@ -483,7 +483,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/227"
         />
         <div
           className="carousel__slide-overlay"
@@ -510,7 +510,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/228"
         />
         <div
           className="carousel__slide-overlay"
@@ -537,7 +537,7 @@ exports[`Accordion should render properly with default props 1`] = `
       >
         <img
           alt="A random Unsplash photo"
-          src="https://source.unsplash.com/random/210x210"
+          src="https://picsum.photos/229"
         />
         <div
           className="carousel__slide-overlay"

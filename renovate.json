@@ -10,7 +10,7 @@
 		"labels": ["security"],
 		"assignees": ["@scriptex"]
 	},
-  "rangeStrategy": "replace",
+	"rangeStrategy": "replace",
 	"major": {
 		"automerge": false
 	}
