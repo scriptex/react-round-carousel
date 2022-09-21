@@ -1,37 +1,31 @@
 {
 	"name": "react-round-carousel",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"description": "An infinitely scrollable 3D carousel component for React",
-	"keywords": [],
-	"homepage": "https://atanas.info/projects/react-round-carousel.html",
+	"keywords": [
+		"3D",
+		"Carousel",
+		"3D Carousel",
+		"React Carousel",
+		"React Component",
+		"React 3D Carousel",
+		"React 3D Component"
+	],
+	"homepage": "https://react-round-carousel.atanas.info",
 	"bugs": {
 		"url": "https://github.com/scriptex/react-round-carousel/issues",
-		"email": "scriptex.bg@gmail.com"
+		"email": "hi@atanas.info"
 	},
 	"license": "MIT",
-	"author": {
-		"name": "Atanas Atanasov",
-		"email": "scriptex.bg@gmail.com",
-		"url": "https://atanas.info"
-	},
-	"funding": [
-		{
-			"type": "individual",
-			"url": "https://www.paypal.me/scriptex"
-		},
-		{
-			"type": "patreon",
-			"url": "https://www.patreon.com/atanas"
-		},
-		{
-			"type": "individual",
-			"url": "https://ko-fi.com/scriptex"
-		}
-	],
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
 	"main": "dist/index.js",
 	"style": "dist/index.css",
 	"types": "dist/index.d.ts",
-	"repository": "https://github.com/scriptex/react-round-carousel",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/react-round-carousel"
+	},
 	"scripts": {
 		"clear": "rm -rf dist",
 		"css": "postcss src/index.css -o dist/index.css",
