@@ -62,7 +62,7 @@
 		"react-dom": "^18.0.0",
 		"react-test-renderer": "18.2.0",
 		"release-it": "15.5.0",
-		"stylelint": "14.13.0",
+		"stylelint": "14.14.0",
 		"stylelint-config-recommended": "9.0.0",
 		"touchsweep": "2.0.0",
 		"ts-jest": "29.0.3",
