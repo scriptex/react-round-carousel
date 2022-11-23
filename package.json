@@ -41,7 +41,11 @@
 		"release-major": "release-it major --ci",
 		"changelog-local": "npx auto-changelog"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"touchsweep": "2.1.0"
+	},
 	"devDependencies": {
 		"@types/jest": "29.2.3",
 		"@types/react": "18.0.25",
@@ -58,20 +62,17 @@
 		"jest-environment-jsdom": "29.3.1",
 		"postcss": "8.4.19",
 		"postcss-cli": "10.0.0",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
 		"react-test-renderer": "18.2.0",
 		"release-it": "15.5.0",
 		"stylelint": "14.15.0",
 		"stylelint-config-recommended": "9.0.0",
-		"touchsweep": "2.1.0",
 		"ts-jest": "29.0.3",
 		"typescript": "4.9.3"
 	},
 	"peerDependencies": {
 		"react": "^16.9.0 || ^17 || ^18",
 		"react-dom": "^16.9.0 || ^17 || ^18",
-		"touchsweep": "^2.0.0"
+		"touchsweep": "^1 || ^2"
 	},
 	"jest": {
 		"moduleFileExtensions": [
