@@ -63,7 +63,7 @@
 		"postcss": "8.4.21",
 		"postcss-cli": "10.1.0",
 		"react-test-renderer": "18.2.0",
-		"release-it": "15.7.0",
+		"release-it": "15.8.0",
 		"stylelint": "15.2.0",
 		"stylelint-config-recommended": "10.0.1",
 		"ts-jest": "29.0.5",
