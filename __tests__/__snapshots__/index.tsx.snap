@@ -15,6 +15,7 @@ exports[`Accordion should render properly with default props 1`] = `
     >
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -42,6 +43,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -69,6 +71,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -96,6 +99,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -123,6 +127,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -150,6 +155,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -177,6 +183,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -204,6 +211,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -231,6 +239,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -258,6 +267,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -285,6 +295,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -312,6 +323,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -339,6 +351,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -366,6 +379,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -393,6 +407,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -420,6 +435,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -447,6 +463,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -474,6 +491,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -501,6 +519,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
@@ -528,6 +547,7 @@ exports[`Accordion should render properly with default props 1`] = `
       </div>
       <div
         className="carousel__slide"
+        onClick={[Function]}
         style={
           {
             "opacity": 1,
