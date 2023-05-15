@@ -5,7 +5,7 @@ export type CarouselItem = {
 	readonly alt?: string;
 	readonly content: React.ReactNode;
 	readonly image: string;
-	readonly click?: () => void;
+	readonly onClick?: () => void;
 };
 
 export type CarouselProps = {
@@ -19,13 +19,13 @@ export type CarouselProps = {
 	readonly ref?: React.ForwardedRef<CarouselRef>;
 };
 
-export type CarouselRef = {
-	readonly next: () => void;
-	readonly prev: () => void;
+export type CarouselRef = Readonly<{
+	next: () => void;
+	prev: () => void;
 	getItems: () => CarouselItem[];
 	getSelectedIndex: () => number;
 	setSelectedIndex: (index: number) => void;
-};
+}>;
 
 export const Carousel: React.FC<CarouselProps> = React.forwardRef((props: CarouselProps, CarouselRef) => {
 	const itemWidth = props.itemWidth;
@@ -39,7 +39,7 @@ export const Carousel: React.FC<CarouselProps> = React.forwardRef((props: Carous
 	const getSlideStyle = (index: number): React.CSSProperties => {
 		const style: React.CSSProperties = {};
 
-		if (index <= len) {
+		if (index < len) {
 			const cellAngle = theta * index;
 
 			style.opacity = 1;
@@ -100,7 +100,7 @@ export const Carousel: React.FC<CarouselProps> = React.forwardRef((props: Carous
 					{props.items.map((item: CarouselItem, index: number) => (
 						<div
 							onClick={() => {
-								if (item.click) item.click();
+								if (item.onClick) item.onClick();
 
 								if (props.slideOnClick) setSelectedIndex(index);
 							}}
