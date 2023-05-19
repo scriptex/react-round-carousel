@@ -56,7 +56,7 @@ The slides (or items) should have the following shape:
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Carousel, CarouselItem } from 'react-round-carousel';
+import { Carousel, CarouselRef, CarouselItem } from 'react-round-carousel';
 
 // Create an array of Carousel Items
 const items: CarouselItem[] = Array(20)
@@ -72,7 +72,11 @@ const items: CarouselItem[] = Array(20)
 		)
 	}));
 
-const App = () => <Carousel items={items} />;
+const App = () => {
+	const carouselRef = React.createRef<CarouselRef>();
+
+	return <Carousel ref={carouselRef} items={items} slideOnClick />;
+};
 
 createRoot(document.getElementById('root')!).render(<App />);
 ```
@@ -89,6 +93,19 @@ The component accepts the following configuration options as props:
 | `nextButtonContent` | `string/ReactNode` | false    | Content of the next button                      | 'Next'     |
 | `prevButtonContent` | `string/ReactNode` | false    | Content of the previous button                  | 'Previous' |
 | `showControls`      | `boolean`          | false    | Show/hide navigation controls                   | true       |
+| `slideOnClick`      | `boolean`          | false    | Slide to the clicked slide                      | false      |
+
+## Controlling from outside
+
+It is possible to control the component from outside - for example from a parent component. In order to do so, a React Ref should be used. The `current` reference contains several methods, including:
+
+-   `next` - Slides the carousel to the next slide.
+-   `prev` - Slides the carousel to the previous slide.
+-   `getItems` - Returns an array with all items passed to the carousel.
+-   `getSelectedIndex` - Returns the active slide index of the carousel.
+-   `setSelectedIndex` - Sets the active slide index of the carousel and slides to this slide.
+
+The [demo](https://react-round-carousel.atanas.info) shows how to use these methods.
 
 ## Style
 
@@ -97,13 +114,16 @@ In order to achieve the layout shown in the [demo](https://react-round-carousel.
 There is an already existing stylesheet which can be found in the `src` folder and can be imported:
 
 -   in your JS entrypoint
-    ```javascript
-    import 'react-round-carousel/src/index.css';
-    ```
+
+```javascript
+import 'react-round-carousel/src/index.css';
+```
+
 -   in your CSS entrypoint
-    ```css
-    @import 'react-round-carousel/src/index.css';
-    ```
+
+```css
+@import 'react-round-carousel/src/index.css';
+```
 
 If you don't want to use the default stylesheet, you can create and use your own.
 

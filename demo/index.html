@@ -14,6 +14,8 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
 		/>
 
+		<link rel="shortcut icon" type="image/x-icon" href="https://atanas.info/images/favicon/favicon.ico" />
+
 		<style>
 			body {
 				font-family: monospace;
@@ -30,7 +32,7 @@
 				width: 100%;
 				max-width: 50rem;
 				flex: 0 0 100%;
-				padding: 1rem;
+				padding: 1rem 1rem 0;
 				margin: auto;
 				box-sizing: border-box;
 			}
@@ -47,16 +49,62 @@
 			}
 
 			.usage pre {
+				max-height: 75vh;
 				padding: 0.125rem 1rem;
 				overflow: auto;
 				-webkit-overflow-scrolling: touch;
 				background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 100%);
 			}
 
+			.usage ul {
+				box-sizing: border-box;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				padding: 0;
+				margin: 0 -0.5rem;
+				list-style: none outside none;
+			}
+
+			.usage li {
+				box-sizing: border-box;
+				flex: 0 0 calc(100% / 3);
+				padding: 0 0.5rem 1rem;
+			}
+
+			.usage li:nth-child(3) ~ li {
+				flex: 0 0 50%
+			}
+
+			.usage button {
+				font-size: 1rem;
+				line-height: 1.2;
+				color: #fff;
+				width: 100%;
+				display: block;
+				height: 100%;
+				padding: 0.5rem;
+				border: 0;
+				background: rgba(0, 0, 0, 0.7);
+				border-radius: 0.25rem;
+				box-shadow: none;
+				appearance: none;
+				cursor: pointer;
+			}
+
 			#root {
 				flex: 0 0 100%;
 				padding-bottom: 3rem;
 				overflow: hidden;
+			}
+
+			#root .usage {
+				padding: 0 1rem 1rem;
+				margin-top: 0;
+			}
+
+			#root .usage h2 {
+				margin-top: 0;
 			}
 
 			.carousel__controls {
@@ -67,7 +115,29 @@
 				display: block;
 				padding-top: 2rem;
 			}
+
+			@media (max-width: 767px) {
+				.usage li,
+				.usage li:nth-child(3) ~ li {
+					flex: 0 0 100%
+				}
+			}
 		</style>
+
+		<script>
+			(function(d, h, m){
+				var js, fjs = d.getElementsByTagName(h)[0];
+				if (d.getElementById(m)){return;}
+				js = d.createElement(h); js.id = m;
+				js.onload = function(){
+					window.makerWidgetComInit({
+					position: "left",
+					widget: "egtvfprlpcdjg1i4-8syknhxgseddkfli-j45otk13qspl7fts"
+				})};
+				js.src = "https://makerwidget.com/js/embed.js";
+				fjs.parentNode.insertBefore(js, fjs)
+			}(document, "script", "dhm"))
+		</script>
 	</head>
 	<body>
 		<div class="usage">
@@ -89,7 +159,7 @@ yarn add react-round-carousel
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Carousel, CarouselItem } from 'react-round-carousel';
+import { Carousel, CarouselItem, CarouselRef } from 'react-round-carousel';
 
 // Create an array of Carousel Items
 const items: CarouselItem[] = Array(20)
@@ -105,7 +175,17 @@ const items: CarouselItem[] = Array(20)
     )
   }));
 
-const App = () => &lt;Carousel items={items} /&gt;;
+const App = () => {
+	const carouselRef = React.createRef<CarouselRef>();
+
+	return (
+		&lt;Carousel
+			ref={carouselRef}
+			items={items}
+			slideOnClick
+		/&gt;;
+	)
+}
 
 createRoot(document.getElementById('root')!).render(&lt;App /&gt;);
         </code></pre>
