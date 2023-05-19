@@ -5,6 +5,7 @@ export type CarouselItem = {
 	readonly alt?: string;
 	readonly content: React.ReactNode;
 	readonly image: string;
+	readonly onClick?: () => void;
 };
 
 export type CarouselProps = {
@@ -14,9 +15,19 @@ export type CarouselProps = {
 	readonly nextButtonContent?: string | React.ReactNode;
 	readonly prevButtonContent?: string | React.ReactNode;
 	readonly showControls?: boolean;
+	readonly slideOnClick?: boolean;
+	readonly ref?: React.ForwardedRef<CarouselRef>;
 };
 
-export const Carousel: React.FC<CarouselProps> = (props: CarouselProps) => {
+export type CarouselRef = Readonly<{
+	next: () => void;
+	prev: () => void;
+	getItems: () => CarouselItem[];
+	getSelectedIndex: () => number;
+	setSelectedIndex: (index: number) => void;
+}>;
+
+export const Carousel: React.FC<CarouselProps> = React.forwardRef((props: CarouselProps, CarouselRef) => {
 	const itemWidth = props.itemWidth;
 	const len = props.items.length;
 	const radius = Math.round((itemWidth || 210) / 2 / Math.tan(Math.PI / len));
@@ -72,12 +83,31 @@ export const Carousel: React.FC<CarouselProps> = (props: CarouselProps) => {
 		};
 	});
 
+	React.useImperativeHandle(CarouselRef, (): CarouselRef => {
+		return {
+			next,
+			prev,
+			getItems: () => props.items,
+			getSelectedIndex: () => selectedIndex,
+			setSelectedIndex: (index: number) => setSelectedIndex(index)
+		};
+	});
+
 	return (
 		<>
 			<div className={getClassName('')} ref={ref}>
 				<div className={getClassName('__container')} style={getItemStyle()}>
 					{props.items.map((item: CarouselItem, index: number) => (
-						<div className={getClassName('__slide')} key={index} style={getSlideStyle(index)}>
+						<div
+							onClick={() => {
+								if (item.onClick) item.onClick();
+
+								if (props.slideOnClick) setSelectedIndex(index);
+							}}
+							className={getClassName('__slide')}
+							key={index}
+							style={getSlideStyle(index)}
+						>
 							<img src={item.image} alt={item.alt} />
 
 							<div className={getClassName('__slide-overlay')}>{item.content}</div>
@@ -99,14 +129,15 @@ export const Carousel: React.FC<CarouselProps> = (props: CarouselProps) => {
 			)}
 		</>
 	);
-};
+});
 
 Carousel.defaultProps = {
 	itemWidth: 210,
 	showControls: true,
 	classNamePrefix: 'carousel',
 	prevButtonContent: 'Previous',
-	nextButtonContent: 'Next'
+	nextButtonContent: 'Next',
+	slideOnClick: false
 };
 
 export default Carousel;
