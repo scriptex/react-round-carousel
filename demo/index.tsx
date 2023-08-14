@@ -1,22 +1,41 @@
-import * as React from 'react';
 import { createRoot } from 'react-dom/client';
+import React, {
+	useState,
+	createRef,
+	HTMLAttributes,
+	DetailedHTMLProps
+} from 'react';
 
 import 'scriptex-socials';
 
 import { items } from './mocks';
 import { Carousel, CarouselRef } from '../dist/index';
 
+const getRandomValue = () => {
+	const crypto = window.crypto || window.msCrypto;
+	const array = new Uint8Array(1);
+
+	return crypto.getRandomValues(array)[0] / Math.pow(2, 8);
+};
+
 declare global {
 	namespace JSX {
 		interface IntrinsicElements {
-			'social-links': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+			'social-links': DetailedHTMLProps<
+				HTMLAttributes<HTMLElement>,
+				HTMLElement
+			>;
 		}
+	}
+
+	interface Window {
+		msCrypto: typeof Crypto;
 	}
 }
 
 const App = () => {
-	const carouselRef = React.createRef<CarouselRef>();
-	const [result, setResult] = React.useState('');
+	const carouselRef = createRef<CarouselRef>();
+	const [result, setResult] = useState('');
 
 	return (
 		<>
@@ -42,7 +61,13 @@ const App = () => {
 					<li>
 						<button
 							onClick={() => {
-								setResult(JSON.stringify(carouselRef.current?.getItems() || [], null, 2));
+								setResult(
+									JSON.stringify(
+										carouselRef.current?.getItems() || [],
+										null,
+										2
+									)
+								);
 							}}
 						>
 							Get carousel items
@@ -76,7 +101,9 @@ const App = () => {
 					<li>
 						<button
 							onClick={() => {
-								const index = carouselRef.current?.getSelectedIndex().toString();
+								const index = carouselRef.current
+									?.getSelectedIndex()
+									.toString();
 
 								setResult(`Selected slide's index is ${index}`);
 							}}
@@ -88,7 +115,9 @@ const App = () => {
 					<li>
 						<button
 							onClick={() => {
-								const index = Math.floor(Math.random() * items.length);
+								const index = Math.floor(
+									getRandomValue() * items.length
+								);
 
 								carouselRef.current?.setSelectedIndex(index);
 
@@ -101,7 +130,22 @@ const App = () => {
 				</ul>
 			</div>
 
+			<div className="usage usage--center">
+				<h2>
+					Carousel with React.ref, external controls and slideOnClick
+				</h2>
+			</div>
+
 			<Carousel ref={carouselRef} items={items} slideOnClick />
+
+			<div className="usage usage--center">
+				<h2>
+					Carousel without React.ref, external controls and
+					slideOnClick
+				</h2>
+			</div>
+
+			<Carousel items={items} />
 
 			<social-links></social-links>
 		</>

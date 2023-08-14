@@ -1,143 +1,214 @@
-import * as React from 'react';
 import TouchSweep from 'touchsweep';
+import { v4 as uuid } from 'uuid';
+import {
+	FC,
+	useRef,
+	useMemo,
+	useState,
+	useEffect,
+	forwardRef,
+	useCallback,
+	CSSProperties,
+	useImperativeHandle
+} from 'react';
 
-export type CarouselItem = {
-	readonly alt?: string;
-	readonly content: React.ReactNode;
-	readonly image: string;
-	readonly onClick?: () => void;
-};
+export type CarouselItem = Readonly<{
+	alt?: string;
+	image: string;
+	content: React.ReactNode;
+	onClick?: () => void;
+}>;
 
-export type CarouselProps = {
-	readonly classNamePrefix?: string;
-	readonly items: CarouselItem[];
-	readonly itemWidth?: number;
-	readonly nextButtonContent?: string | React.ReactNode;
-	readonly prevButtonContent?: string | React.ReactNode;
-	readonly showControls?: boolean;
-	readonly slideOnClick?: boolean;
-	readonly ref?: React.ForwardedRef<CarouselRef>;
-};
+export type DecoratedCarouselItem = CarouselItem & Readonly<{ id: string }>;
+
+export type CarouselProps = Readonly<{
+	ref?: React.ForwardedRef<CarouselRef>;
+	items: CarouselItem[];
+	itemWidth?: number;
+	showControls?: boolean;
+	slideOnClick?: boolean;
+	classNamePrefix?: string;
+	nextButtonContent?: string | React.ReactNode;
+	prevButtonContent?: string | React.ReactNode;
+}>;
 
 export type CarouselRef = Readonly<{
 	next: () => void;
 	prev: () => void;
-	getItems: () => CarouselItem[];
+	getItems: () => DecoratedCarouselItem[];
 	getSelectedIndex: () => number;
 	setSelectedIndex: (index: number) => void;
 }>;
 
-export const Carousel: React.FC<CarouselProps> = React.forwardRef((props: CarouselProps, CarouselRef) => {
-	const itemWidth = props.itemWidth;
-	const len = props.items.length;
-	const radius = Math.round((itemWidth || 210) / 2 / Math.tan(Math.PI / len));
-	const theta = 360 / len;
+export const Carousel: FC<CarouselProps> = forwardRef(
+	(
+		{
+			items,
+			itemWidth = 210,
+			showControls = true,
+			slideOnClick = false,
+			classNamePrefix = 'carousel',
+			prevButtonContent = 'Previous',
+			nextButtonContent = 'Next'
+		}: CarouselProps,
+		CarouselRef
+	) => {
+		const data: DecoratedCarouselItem[] = useMemo(
+			() =>
+				items.map(item => ({
+					...item,
+					...((item as unknown as DecoratedCarouselItem).id
+						? ({} as unknown as DecoratedCarouselItem)
+						: { id: uuid() })
+				})),
+			[items]
+		);
 
-	const ref = React.useRef<HTMLDivElement>(null);
-	const [selectedIndex, setSelectedIndex] = React.useState(0);
+		const len = useMemo(() => data.length, [data.length]);
+		const theta = useMemo(() => 360 / len, [len]);
 
-	const getSlideStyle = (index: number): React.CSSProperties => {
-		const style: React.CSSProperties = {};
+		const radius = useMemo(
+			() => Math.round(itemWidth / 2 / Math.tan(Math.PI / len)),
+			[itemWidth, len]
+		);
 
-		if (index < len) {
-			const cellAngle = theta * index;
+		const ref = useRef<HTMLDivElement>(null);
+		const [selectedIndex, setSelectedIndex] = useState(0);
 
-			style.opacity = 1;
-			style.transform = `rotateY(${cellAngle}deg) translateZ(${radius}px)`;
-		} else {
-			style.opacity = 0;
-			style.transform = 'none';
-		}
+		const getSlideStyle = useCallback(
+			(index: number): CSSProperties => {
+				const style: CSSProperties = {};
 
-		return style;
-	};
+				if (index < len) {
+					const cellAngle = theta * index;
 
-	const getItemStyle = (): React.CSSProperties => {
-		const angle = theta * selectedIndex * -1;
+					style.opacity = 1;
+					style.transform = `rotateY(${cellAngle}deg) translateZ(${radius}px)`;
+				} else {
+					style.opacity = 0;
+					style.transform = 'none';
+				}
 
-		return {
-			transform: `translateZ(${-1 * radius}px) rotateY(${angle}deg)`
-		};
-	};
+				return style;
+			},
+			[len, radius, theta]
+		);
 
-	const getClassName = (parts: string | string[]) =>
-		Array.isArray(parts)
-			? parts.map((part: string) => `${props.classNamePrefix}${part}`).join(' ')
-			: `${props.classNamePrefix}${parts}`;
+		const getItemStyle = useCallback((): CSSProperties => {
+			const angle = theta * selectedIndex * -1;
 
-	const prev = () => setSelectedIndex(selectedIndex - 1);
-	const next = () => setSelectedIndex(selectedIndex + 1);
+			return {
+				transform: `translateZ(${-1 * radius}px) rotateY(${angle}deg)`
+			};
+		}, [radius, selectedIndex, theta]);
 
-	React.useEffect(() => {
-		const area = ref?.current;
-		const touchsweep = new TouchSweep(area || undefined);
+		const getClassName = useCallback(
+			(parts: string | string[]) =>
+				Array.isArray(parts)
+					? parts
+							.map((part: string) => `${classNamePrefix}${part}`)
+							.join(' ')
+					: `${classNamePrefix}${parts}`,
+			[classNamePrefix]
+		);
 
-		area?.addEventListener('swipeleft', next);
-		area?.addEventListener('swiperight', prev);
+		const prev = useCallback(
+			() => setSelectedIndex(selectedIndex - 1),
+			[selectedIndex]
+		);
 
-		return () => {
-			touchsweep.unbind();
+		const next = useCallback(
+			() => setSelectedIndex(selectedIndex + 1),
+			[selectedIndex]
+		);
 
-			area?.removeEventListener('swipeleft', next);
-			area?.removeEventListener('swiperight', prev);
-		};
-	});
+		useEffect(() => {
+			const area = ref?.current;
+			const touchsweep = new TouchSweep(area ?? undefined);
 
-	React.useImperativeHandle(CarouselRef, (): CarouselRef => {
-		return {
-			next,
-			prev,
-			getItems: () => props.items,
-			getSelectedIndex: () => selectedIndex,
-			setSelectedIndex: (index: number) => setSelectedIndex(index)
-		};
-	});
+			area?.addEventListener('swipeleft', next);
+			area?.addEventListener('swiperight', prev);
 
-	return (
-		<>
-			<div className={getClassName('')} ref={ref}>
-				<div className={getClassName('__container')} style={getItemStyle()}>
-					{props.items.map((item: CarouselItem, index: number) => (
-						<div
-							onClick={() => {
-								if (item.onClick) item.onClick();
+			return () => {
+				touchsweep.unbind();
 
-								if (props.slideOnClick) setSelectedIndex(index);
-							}}
-							className={getClassName('__slide')}
-							key={index}
-							style={getSlideStyle(index)}
+				area?.removeEventListener('swipeleft', next);
+				area?.removeEventListener('swiperight', prev);
+			};
+		});
+
+		useImperativeHandle(
+			CarouselRef,
+			(): CarouselRef => ({
+				next,
+				prev,
+				getItems: () => data,
+				getSelectedIndex: () => selectedIndex,
+				setSelectedIndex: (index: number) => setSelectedIndex(index)
+			})
+		);
+
+		return (
+			<>
+				<div className={getClassName('')} ref={ref}>
+					<div
+						className={getClassName('__container')}
+						style={getItemStyle()}
+					>
+						{data.map(
+							(item: DecoratedCarouselItem, index: number) => (
+								<div
+									key={item.id}
+									style={getSlideStyle(index)}
+									onClick={() => {
+										if (item.onClick) item.onClick();
+
+										if (slideOnClick)
+											setSelectedIndex(index);
+									}}
+									className={getClassName('__slide')}
+								>
+									<img src={item.image} alt={item.alt} />
+
+									<div
+										className={getClassName(
+											'__slide-overlay'
+										)}
+									>
+										{item.content}
+									</div>
+								</div>
+							)
+						)}
+					</div>
+				</div>
+
+				{showControls && (
+					<div className={getClassName('__controls')}>
+						<button
+							className={getClassName([
+								'__control',
+								'__control--prev'
+							])}
+							onClick={prev}
 						>
-							<img src={item.image} alt={item.alt} />
+							{prevButtonContent}
+						</button>
 
-							<div className={getClassName('__slide-overlay')}>{item.content}</div>
-						</div>
-					))}
-				</div>
-			</div>
-
-			{props.showControls && (
-				<div className={getClassName('__controls')}>
-					<button className={getClassName(['__control', '__control--prev'])} onClick={prev}>
-						{props.prevButtonContent}
-					</button>
-
-					<button className={getClassName(['__control', '__control--next'])} onClick={next}>
-						{props.nextButtonContent}
-					</button>
-				</div>
-			)}
-		</>
-	);
-});
-
-Carousel.defaultProps = {
-	itemWidth: 210,
-	showControls: true,
-	classNamePrefix: 'carousel',
-	prevButtonContent: 'Previous',
-	nextButtonContent: 'Next',
-	slideOnClick: false
-};
+						<button
+							className={getClassName([
+								'__control',
+								'__control--next'
+							])}
+							onClick={next}
+						>
+							{nextButtonContent}
+						</button>
+					</div>
+				)}
+			</>
+		);
+	}
+);
 
 export default Carousel;

@@ -27,13 +27,13 @@ _.config.yml
 .gitattributes
 .gitignore
 .nvmrc
+.postcssrc.json
 .prettierignore
 .prettierrc
 .stylelintignore
 .stylelintrc
 .travis.yml
 .whitesource
-postcss.config.js
 renovate.json
 tsconfig.json
 tsconfig-lint.json

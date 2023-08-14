@@ -10,7 +10,7 @@
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
-		"jsx": "react",
+		"jsx": "react-jsx",
 		"lib": ["dom", "esNext"],
 		"module": "commonjs",
 		"moduleResolution": "node",

@@ -1,6 +1,6 @@
 {
 	"name": "react-round-carousel",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"description": "An infinitely scrollable 3D carousel component for React",
 	"keywords": [
 		"3D",
@@ -44,13 +44,15 @@
 	"dependencies": {
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"touchsweep": "2.1.0"
+		"touchsweep": "2.1.0",
+		"uuid": "9.0.0"
 	},
 	"devDependencies": {
+		"@testing-library/react": "14.0.0",
 		"@types/jest": "29.5.3",
 		"@types/react": "18.2.20",
 		"@types/react-dom": "18.2.7",
-		"@types/react-test-renderer": "18.0.0",
+		"@types/uuid": "9.0.2",
 		"@typescript-eslint/eslint-plugin": "6.3.0",
 		"@typescript-eslint/parser": "6.3.0",
 		"autoprefixer": "10.4.15",
@@ -62,7 +64,6 @@
 		"jest-environment-jsdom": "29.6.2",
 		"postcss": "8.4.27",
 		"postcss-cli": "10.1.0",
-		"react-test-renderer": "18.2.0",
 		"release-it": "16.1.5",
 		"stylelint": "15.10.2",
 		"stylelint-config-recommended": "13.0.0",
@@ -72,7 +73,8 @@
 	"peerDependencies": {
 		"react": "^16.9.0 || ^17 || ^18",
 		"react-dom": "^16.9.0 || ^17 || ^18",
-		"touchsweep": "^1 || ^2"
+		"touchsweep": "^1 || ^2",
+		"uuid": "^9.0.0"
 	},
 	"jest": {
 		"moduleFileExtensions": [
