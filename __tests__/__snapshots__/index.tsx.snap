@@ -1,595 +1,281 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion should render properly with default props 1`] = `
-[
+exports[`Accordion should render properly with ref prop 1`] = `
+<DocumentFragment>
   <div
-    className="carousel"
+    class="carousel"
   >
     <div
-      className="carousel__container"
-      style={
-        {
-          "transform": "translateZ(-663px) rotateY(0deg)",
-        }
-      }
+      class="carousel__container"
+      style="transform: translateZ(0px) rotateY(0deg);"
     >
       <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(0deg) translateZ(663px)",
-          }
-        }
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(0deg) translateZ(0px);"
       >
         <img
           alt="A random Unsplash photo"
           src="https://picsum.photos/210"
         />
         <div
-          className="carousel__slide-overlay"
+          class="carousel__slide-overlay"
         >
           <div>
             <strong>
               Round Carousel
             </strong>
             <span>
-              Slide number 
-              1
+              Slide number 1
             </span>
           </div>
         </div>
       </div>
       <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(18deg) translateZ(663px)",
-          }
-        }
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(180deg) translateZ(0px);"
       >
         <img
           alt="A random Unsplash photo"
           src="https://picsum.photos/211"
         />
         <div
-          className="carousel__slide-overlay"
+          class="carousel__slide-overlay"
         >
           <div>
             <strong>
               Round Carousel
             </strong>
             <span>
-              Slide number 
-              2
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(36deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/212"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              3
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(54deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/213"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              4
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(72deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/214"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              5
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(90deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/215"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              6
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(108deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/216"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              7
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(126deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/217"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              8
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(144deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/218"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              9
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(162deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/219"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              10
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(180deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/220"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              11
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(198deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/221"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              12
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(216deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/222"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              13
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(234deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/223"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              14
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(252deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/224"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              15
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(270deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/225"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              16
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(288deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/226"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              17
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(306deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/227"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              18
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(324deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/228"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              19
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="carousel__slide"
-        onClick={[Function]}
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotateY(342deg) translateZ(663px)",
-          }
-        }
-      >
-        <img
-          alt="A random Unsplash photo"
-          src="https://picsum.photos/229"
-        />
-        <div
-          className="carousel__slide-overlay"
-        >
-          <div>
-            <strong>
-              Round Carousel
-            </strong>
-            <span>
-              Slide number 
-              20
+              Slide number 2
             </span>
           </div>
         </div>
       </div>
     </div>
-  </div>,
+  </div>
   <div
-    className="carousel__controls"
+    class="carousel__controls"
   >
     <button
-      className="carousel__control carousel__control--prev"
-      onClick={[Function]}
+      class="carousel__control carousel__control--prev"
     >
       Previous
     </button>
     <button
-      className="carousel__control carousel__control--next"
-      onClick={[Function]}
+      class="carousel__control carousel__control--next"
     >
       Next
     </button>
-  </div>,
-]
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion should render properly with ref prop 2`] = `
+<DocumentFragment>
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel__container"
+      style="transform: translateZ(0px) rotateY(0deg);"
+    >
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(0deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/210"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(180deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/211"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 2
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="carousel__controls"
+  >
+    <button
+      class="carousel__control carousel__control--prev"
+    >
+      Previous
+    </button>
+    <button
+      class="carousel__control carousel__control--next"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion should render properly with ref prop 3`] = `
+<DocumentFragment>
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel__container"
+      style="transform: translateZ(0px) rotateY(0deg);"
+    >
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(0deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/210"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(180deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/211"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 2
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="carousel__controls"
+  >
+    <button
+      class="carousel__control carousel__control--prev"
+    >
+      Previous
+    </button>
+    <button
+      class="carousel__control carousel__control--next"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion should render properly without ref props 1`] = `
+<DocumentFragment>
+  <div
+    class="carousel"
+  >
+    <div
+      class="carousel__container"
+      style="transform: translateZ(0px) rotateY(0deg);"
+    >
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(0deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/210"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel__slide"
+        style="opacity: 1; transform: rotateY(180deg) translateZ(0px);"
+      >
+        <img
+          alt="A random Unsplash photo"
+          src="https://picsum.photos/211"
+        />
+        <div
+          class="carousel__slide-overlay"
+        >
+          <div>
+            <strong>
+              Round Carousel
+            </strong>
+            <span>
+              Slide number 2
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="carousel__controls"
+  >
+    <button
+      class="carousel__control carousel__control--prev"
+    >
+      Previous
+    </button>
+    <button
+      class="carousel__control carousel__control--next"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
 `;

@@ -14,7 +14,11 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
 		/>
 
-		<link rel="shortcut icon" type="image/x-icon" href="https://atanas.info/images/favicon/favicon.ico" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://atanas.info/images/favicon/favicon.ico"
+		/>
 
 		<style>
 			body {
@@ -35,6 +39,10 @@
 				padding: 1rem 1rem 0;
 				margin: auto;
 				box-sizing: border-box;
+			}
+
+			.usage--center {
+				text-align: center;
 			}
 
 			.usage p,
@@ -73,7 +81,7 @@
 			}
 
 			.usage li:nth-child(3) ~ li {
-				flex: 0 0 50%
+				flex: 0 0 50%;
 			}
 
 			.usage button {
@@ -103,6 +111,14 @@
 				margin-top: 0;
 			}
 
+			#root .usage--center {
+				margin-top: 0.5rem;
+			}
+
+			#root .usage--center ~ .usage--center {
+				margin-top: 3rem;
+			}
+
 			#root .usage h2 {
 				margin-top: 0;
 			}
@@ -119,12 +135,13 @@
 			@media (max-width: 767px) {
 				.usage li,
 				.usage li:nth-child(3) ~ li {
-					flex: 0 0 100%
+					flex: 0 0 100%;
 				}
 			}
 		</style>
 
 		<script>
+			// prettier-ignore
 			(function(d, h, m){
 				var js, fjs = d.getElementsByTagName(h)[0];
 				if (d.getElementById(m)){return;}
@@ -163,20 +180,20 @@ import { Carousel, CarouselItem, CarouselRef } from 'react-round-carousel';
 
 // Create an array of Carousel Items
 const items: CarouselItem[] = Array(20)
-  .fill('')
-  .map((_: string, index: number) => ({
-    alt: 'A random photo',
-    image: `https://picsum.photos/${210 + index}`,
-    content: (
-      &lt;div&gt;
-        &lt;strong&gt;Round Carousel&lt;/strong&gt;
-        &lt;span&gt;Slide number {index + 1}&lt;/span&gt;
-      &lt;/div&gt;
-    )
-  }));
+	.fill('')
+	.map((_: string, index: number) => ({
+	alt: 'A random photo',
+	image: `https://picsum.photos/${210 + index}`,
+	content: (
+		&lt;div&gt;
+		&lt;strong&gt;Round Carousel&lt;/strong&gt;
+		&lt;span&gt;Slide number {index + 1}&lt;/span&gt;
+		&lt;/div&gt;
+	)
+	}));
 
 const App = () => {
-	const carouselRef = React.createRef<CarouselRef>();
+	const carouselRef = React.createRef&lt;CarouselRef&gt;();
 
 	return (
 		&lt;Carousel
@@ -187,8 +204,7 @@ const App = () => {
 	)
 }
 
-createRoot(document.getElementById('root')!).render(&lt;App /&gt;);
-        </code></pre>
+createRoot(document.getElementById('root')!).render(&lt;App /&gt;);</code></pre>
 		</div>
 
 		<div id="root"></div>

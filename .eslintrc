@@ -29,6 +29,7 @@
 		"react/no-children-prop": "off",
 		"react/no-find-dom-node": "off",
 		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": ["warn"]
 	},
