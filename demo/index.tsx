@@ -11,6 +11,13 @@ import 'scriptex-socials';
 import { items } from './mocks';
 import { Carousel, CarouselRef } from '../dist/index';
 
+const getRandomValue = () => {
+	const crypto = window.crypto || window.msCrypto;
+	const array = new Uint8Array(1);
+
+	return crypto.getRandomValues(array)[0] / Math.pow(2, 8);
+};
+
 declare global {
 	namespace JSX {
 		interface IntrinsicElements {
@@ -19,6 +26,10 @@ declare global {
 				HTMLElement
 			>;
 		}
+	}
+
+	interface Window {
+		msCrypto: typeof Crypto;
 	}
 }
 
@@ -105,7 +116,7 @@ const App = () => {
 						<button
 							onClick={() => {
 								const index = Math.floor(
-									Math.random() * items.length
+									getRandomValue() * items.length
 								);
 
 								carouselRef.current?.setSelectedIndex(index);
