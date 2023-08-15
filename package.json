@@ -62,7 +62,7 @@
 		"eslint-plugin-react-hooks": "4.6.0",
 		"jest": "29.6.2",
 		"jest-environment-jsdom": "29.6.2",
-		"postcss": "8.4.27",
+		"postcss": "8.4.28",
 		"postcss-cli": "10.1.0",
 		"release-it": "16.1.5",
 		"stylelint": "15.10.2",
