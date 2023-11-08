@@ -15,8 +15,8 @@
 		"scriptex-socials": "1.7.0"
 	},
 	"devDependencies": {
-		"@types/react": "18.2.36",
-		"@types/react-dom": "18.2.14",
+		"@types/react": "18.2.37",
+		"@types/react-dom": "18.2.15",
 		"parcel": "2.10.2",
 		"typescript": "5.2.2"
 	}
