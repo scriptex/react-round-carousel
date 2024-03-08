@@ -6,6 +6,8 @@ import {
 	useMemo,
 	useState,
 	useEffect,
+	LegacyRef,
+	ReactNode,
 	forwardRef,
 	useCallback,
 	CSSProperties,
@@ -15,21 +17,21 @@ import {
 export type CarouselItem = Readonly<{
 	alt?: string;
 	image: string;
-	content: React.ReactNode;
+	content: ReactNode;
 	onClick?: () => void;
 }>;
 
 export type DecoratedCarouselItem = CarouselItem & Readonly<{ id: string }>;
 
 export type CarouselProps = Readonly<{
-	ref?: React.ForwardedRef<CarouselRef>;
+	ref?: LegacyRef<CarouselRef>;
 	items: CarouselItem[];
 	itemWidth?: number;
 	showControls?: boolean;
 	slideOnClick?: boolean;
 	classNamePrefix?: string;
-	nextButtonContent?: string | React.ReactNode;
-	prevButtonContent?: string | React.ReactNode;
+	nextButtonContent?: string | ReactNode;
+	prevButtonContent?: string | ReactNode;
 }>;
 
 export type CarouselRef = Readonly<{
