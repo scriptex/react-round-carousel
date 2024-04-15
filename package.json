@@ -48,13 +48,13 @@
 		"uuid": "9.0.1"
 	},
 	"devDependencies": {
-		"@testing-library/react": "14.2.2",
+		"@testing-library/react": "14.3.1",
 		"@types/jest": "29.5.12",
-		"@types/react": "18.2.74",
-		"@types/react-dom": "18.2.24",
+		"@types/react": "18.2.78",
+		"@types/react-dom": "18.2.25",
 		"@types/uuid": "9.0.8",
-		"@typescript-eslint/eslint-plugin": "7.5.0",
-		"@typescript-eslint/parser": "7.5.0",
+		"@typescript-eslint/eslint-plugin": "7.6.0",
+		"@typescript-eslint/parser": "7.6.0",
 		"autoprefixer": "10.4.19",
 		"eslint": "9.0.0",
 		"eslint-config-prettier": "9.1.0",
@@ -64,11 +64,11 @@
 		"jest-environment-jsdom": "29.7.0",
 		"postcss": "8.4.38",
 		"postcss-cli": "11.0.0",
-		"release-it": "17.1.1",
+		"release-it": "17.2.0",
 		"stylelint": "16.3.1",
 		"stylelint-config-recommended": "14.0.0",
 		"ts-jest": "29.1.2",
-		"typescript": "5.4.4"
+		"typescript": "5.4.5"
 	},
 	"peerDependencies": {
 		"react": "^16.9.0 || ^17 || ^18",
