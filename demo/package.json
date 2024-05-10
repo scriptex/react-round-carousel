@@ -12,7 +12,7 @@
 		"react-dom": "../node_modules/react-dom"
 	},
 	"dependencies": {
-		"scriptex-socials": "1.7.0"
+		"scriptex-socials": "1.8.0"
 	},
 	"devDependencies": {
 		"@types/react": "18.3.1",
