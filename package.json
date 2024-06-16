@@ -68,7 +68,7 @@
 		"release-it": "17.3.0",
 		"stylelint": "16.6.1",
 		"stylelint-config-recommended": "14.0.0",
-		"ts-jest": "29.1.4",
+		"ts-jest": "29.1.5",
 		"typescript": "5.4.5"
 	},
 	"peerDependencies": {
