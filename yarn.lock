@@ -4927,10 +4927,10 @@ registry-url@^6.0.0:
   dependencies:
     rc "1.2.8"
 
-release-it@17.4.2:
-  version "17.4.2"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-17.4.2.tgz#a2f0b88b7aff405a881b5b57d4e460b60c84d085"
-  integrity sha512-s+ePzQm94DlTy1/3+MjfymY4kte1n0P8pHNkAuSPwGoQKFvQtTMG+YTGi25dYW5U+UsEayhEvaViUuc6nD2gHw==
+release-it@17.5.0:
+  version "17.5.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-17.5.0.tgz#da18bf207e9cdea5b7c264474a26607f0e27c578"
+  integrity sha512-+g6k/7i6AjdCozLkcybvwgYLw/RF6bcYJHf1xDLcg36GeBu8zr/geI9joLk5drubiE/UKdN694vwAeimmJWt8Q==
   dependencies:
     "@iarna/toml" "2.2.5"
     "@octokit/rest" "20.1.1"
