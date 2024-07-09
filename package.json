@@ -69,7 +69,7 @@
 		"stylelint": "16.6.1",
 		"stylelint-config-recommended": "14.0.1",
 		"ts-jest": "29.1.5",
-		"typescript": "5.5.2"
+		"typescript": "5.5.3"
 	},
 	"peerDependencies": {
 		"react": "^16.9.0 || ^17 || ^18",
