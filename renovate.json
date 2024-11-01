@@ -4,7 +4,8 @@
 		":automergePatch",
 		":automergeMinor",
 		":automergeBranch",
-		":disableDependencyDashboard"
+		":disableDependencyDashboard",
+    "group:allNonMajor"
 	],
 	"travis": {
 		"enabled": true
