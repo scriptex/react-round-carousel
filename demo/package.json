@@ -8,6 +8,7 @@
 		"build": "yarn clean && parcel build index.html --no-source-maps"
 	},
 	"alias": {
+		"process": false,
 		"react": "../node_modules/react",
 		"react-dom": "../node_modules/react-dom"
 	},
@@ -15,9 +16,12 @@
 		"scriptex-socials": "1.8.0"
 	},
 	"devDependencies": {
-		"@types/react": "18.3.18",
-		"@types/react-dom": "18.3.5",
+		"@babel/core": "7.26.0",
+		"@babel/plugin-transform-react-jsx": "7.25.9",
+		"@types/react": "19.0.2",
+		"@types/react-dom": "19.0.2",
 		"parcel": "2.13.3",
+		"process": "0.11.10",
 		"typescript": "5.7.2"
 	}
 }

@@ -1,10 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import React, {
-	useState,
-	createRef,
-	HTMLAttributes,
-	DetailedHTMLProps
-} from 'react';
+import React, { useState, createRef, DetailedHTMLProps } from 'react';
 
 import 'scriptex-socials';
 
@@ -19,12 +14,14 @@ const getRandomValue = () => {
 };
 
 declare global {
-	namespace JSX {
-		interface IntrinsicElements {
-			'social-links': DetailedHTMLProps<
-				HTMLAttributes<HTMLElement>,
-				HTMLElement
-			>;
+	namespace React {
+		namespace JSX {
+			interface IntrinsicElements {
+				'social-links': DetailedHTMLProps<
+					HTMLAttributes<HTMLElement>,
+					HTMLElement
+				>;
+			}
 		}
 	}
 

@@ -42,17 +42,17 @@
 		"changelog-local": "npx auto-changelog"
 	},
 	"dependencies": {
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
 		"touchsweep": "2.2.0",
-		"uuid": "11.0.3"
+		"uuid": "11.0.4"
 	},
 	"devDependencies": {
 		"@testing-library/dom": "10.4.0",
 		"@testing-library/react": "16.1.0",
 		"@types/jest": "29.5.14",
-		"@types/react": "18.3.18",
-		"@types/react-dom": "18.3.5",
+		"@types/react": "19.0.2",
+		"@types/react-dom": "19.0.2",
 		"@types/uuid": "10.0.0",
 		"@typescript-eslint/eslint-plugin": "8.19.0",
 		"@typescript-eslint/parser": "8.19.0",
@@ -65,15 +65,15 @@
 		"jest-environment-jsdom": "29.7.0",
 		"postcss": "8.4.49",
 		"postcss-cli": "11.0.0",
-		"release-it": "17.11.0",
+		"release-it": "18.0.0",
 		"stylelint": "16.12.0",
 		"stylelint-config-recommended": "14.0.1",
 		"ts-jest": "29.2.5",
 		"typescript": "5.7.2"
 	},
 	"peerDependencies": {
-		"react": "^16.9.0 || ^17 || ^18",
-		"react-dom": "^16.9.0 || ^17 || ^18",
+		"react": "^16.9.0 || ^17 || ^18 || ^19",
+		"react-dom": "^16.9.0 || ^17 || ^18 || ^19",
 		"touchsweep": "^1 || ^2",
 		"uuid": "^11.0.0"
 	},
