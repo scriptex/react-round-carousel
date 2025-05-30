@@ -16,7 +16,7 @@
 		"scriptex-socials": "1.8.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.27.3",
+		"@babel/core": "7.27.4",
 		"@babel/plugin-transform-react-jsx": "7.27.1",
 		"@types/react": "19.1.6",
 		"@types/react-dom": "19.1.5",
