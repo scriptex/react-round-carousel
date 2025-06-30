@@ -16,11 +16,11 @@
 		"scriptex-socials": "1.8.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.27.4",
+		"@babel/core": "7.27.7",
 		"@babel/plugin-transform-react-jsx": "7.27.1",
 		"@types/react": "19.1.8",
 		"@types/react-dom": "19.1.6",
-		"parcel": "2.15.2",
+		"parcel": "2.15.4",
 		"process": "0.11.10",
 		"typescript": "5.8.3"
 	}
