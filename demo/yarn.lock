@@ -1713,10 +1713,10 @@ sax@^1.4.1:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.4.1.tgz#44cc8988377f126304d3b3fc1010c733b929ef0f"
   integrity sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==
 
-scriptex-socials@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.9.0.tgz#a8bdd78e01b16c927c02f5cb3c59769fccf1dd8c"
-  integrity sha512-PXxq7SMpg3ayd/DXIzDE4RHY5NR92x/iZYi6uAdEyoZ0474mseirdJhHjZ/+a158e64jfcAXZCtI4dXJKDrmpg==
+scriptex-socials@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.9.1.tgz#26d55bb4705a4916df5839d999bb2852fdeae17d"
+  integrity sha512-+p3F9vg1OVUwutf4UaXEbbm2tXWOHieNSCykPgWf/G0qEsci/BCwVOgGcU3jgpZvCs2ZE7LMDQE90Z5SIhd9Gw==
   dependencies:
     cheerio "^1.0.0-rc.12"
     commander "^14.0.0"
