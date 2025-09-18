@@ -10,10 +10,12 @@
 	"alias": {
 		"process": false,
 		"react": "../node_modules/react",
-		"react-dom": "../node_modules/react-dom"
+		"react-dom": "../node_modules/react-dom",
+		"uuid": "uuid/dist/index.js"
 	},
 	"dependencies": {
-		"scriptex-socials": "1.9.1"
+		"scriptex-socials": "1.9.1",
+		"uuid": "13.0.0"
 	},
 	"devDependencies": {
 		"@babel/core": "7.28.4",
