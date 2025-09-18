@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import React, { useState, createRef, DetailedHTMLProps } from 'react';
+import { useState, createRef, DetailedHTMLProps } from 'react';
 
 import 'scriptex-socials';
 
