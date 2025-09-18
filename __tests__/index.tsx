@@ -1,8 +1,14 @@
-import React, { createRef } from 'react';
+import { createRef } from 'react';
 import { render, waitFor, fireEvent } from '@testing-library/react';
 
 import { items } from '../demo/mocks';
 import { Carousel, CarouselRef } from '../src';
+
+let index = 0;
+
+jest.mock('uuid', () => ({
+	v4: () => index++
+}));
 
 const carouselItems = items
 	.map(item => ({
