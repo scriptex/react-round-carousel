@@ -18,7 +18,7 @@
 		"uuid": "13.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.28.4",
+		"@babel/core": "7.28.5",
 		"@babel/plugin-transform-react-jsx": "7.27.1",
 		"@types/react": "19.2.2",
 		"@types/react-dom": "19.2.2",
