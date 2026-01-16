@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.28.6",
-		"@babel/plugin-transform-react-jsx": "7.27.1",
+		"@babel/plugin-transform-react-jsx": "7.28.6",
 		"@types/react": "19.2.8",
 		"@types/react-dom": "19.2.3",
 		"parcel": "2.16.3",
