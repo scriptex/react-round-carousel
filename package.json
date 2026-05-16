@@ -42,8 +42,8 @@
 		"changelog-local": "npx auto-changelog"
 	},
 	"dependencies": {
-		"react": "19.2.5",
-		"react-dom": "19.2.5",
+		"react": "19.2.6",
+		"react-dom": "19.2.6",
 		"touchsweep": "2.2.0",
 		"uuid": "14.0.0"
 	},
@@ -54,8 +54,8 @@
 		"@types/react": "19.2.14",
 		"@types/react-dom": "19.2.3",
 		"@types/uuid": "11.0.0",
-		"@typescript-eslint/eslint-plugin": "8.59.1",
-		"@typescript-eslint/parser": "8.59.1",
+		"@typescript-eslint/eslint-plugin": "8.59.3",
+		"@typescript-eslint/parser": "8.59.3",
 		"autoprefixer": "10.5.0",
 		"eslint": "10.2.1",
 		"eslint-config-prettier": "10.1.8",
@@ -64,7 +64,7 @@
 		"globals": "17.5.0",
 		"jest": "30.3.0",
 		"jest-environment-jsdom": "30.3.0",
-		"postcss": "8.5.13",
+		"postcss": "8.5.14",
 		"postcss-cli": "11.0.1",
 		"release-it": "20.0.1",
 		"stylelint": "17.9.1",
