@@ -14,7 +14,7 @@
 		"uuid": "uuid/dist/index.js"
 	},
 	"dependencies": {
-		"scriptex-socials": "1.9.1",
+		"scriptex-socials": "1.10.1",
 		"uuid": "14.0.0"
 	},
 	"devDependencies": {
