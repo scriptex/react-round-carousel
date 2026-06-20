@@ -18,8 +18,8 @@
 		"uuid": "14.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.29.7",
-		"@babel/plugin-transform-react-jsx": "7.29.7",
+		"@babel/core": "8.0.1",
+		"@babel/plugin-transform-react-jsx": "8.0.1",
 		"@types/react": "19.2.17",
 		"@types/react-dom": "19.2.3",
 		"parcel": "2.16.4",
