@@ -4,6 +4,8 @@ import { render, waitFor, fireEvent } from '@testing-library/react';
 import { items } from '../demo/mocks';
 import { Carousel, CarouselRef } from '../src';
 
+import { jest } from '@jest/globals';
+
 let index = 0;
 
 jest.mock('uuid', () => ({

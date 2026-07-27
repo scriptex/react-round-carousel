@@ -30,7 +30,7 @@ export default [
 			reactHooks,
 			tsEsLint
 		},
-		ignores: ['postcss.config.js'],
+		ignores: ['postcss.config.js', 'dist/*', 'demo/dist/*'],
 		rules: {
 			'no-console': 'error'
 		},
