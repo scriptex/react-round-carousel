@@ -3,7 +3,7 @@
 		"alwaysStrict": true,
 		"allowSyntheticDefaultImports": true,
 		"allowJs": false,
-		"rootDir": "./src",
+		"rootDir": ".",
 		"checkJs": false,
 		"declaration": true,
 		"emitDecoratorMetadata": true,
@@ -31,9 +31,10 @@
 		"strictPropertyInitialization": true,
 		"strictNullChecks": true,
 		"sourceMap": false,
-		"target": "esnext"
+		"target": "esnext",
+		"types": ["jest"]
 	},
 	"compileOnSave": true,
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "__tests__/**/*"],
 	"exclude": ["node_modules"]
 }

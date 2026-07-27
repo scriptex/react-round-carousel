@@ -31,7 +31,7 @@
 		"css": "postcss src/index.css -o dist/index.css",
 		"start": "tsc -w",
 		"build": "yarn clear && yarn css && tsc",
-		"test": "jest --env jsdom",
+		"test": "jest --config ./jest.config.mjs",
 		"lint": "yarn lint:ts && yarn lint:css",
 		"lint:ts": "eslint",
 		"lint:css": "stylelint ./**/*.css",
@@ -70,7 +70,7 @@
 		"stylelint": "17.14.1",
 		"stylelint-config-recommended": "18.0.0",
 		"ts-jest": "29.4.12",
-		"typescript": "7.0.2"
+		"typescript": "6.0.3"
 	},
 	"peerDependencies": {
 		"react": "^16.9.0 || ^17 || ^18 || ^19",
