@@ -3,7 +3,7 @@
 		"alwaysStrict": true,
 		"allowSyntheticDefaultImports": true,
 		"allowJs": false,
-		"rootDir": ".",
+		"rootDir": "./src",
 		"checkJs": false,
 		"declaration": true,
 		"emitDecoratorMetadata": true,
@@ -35,6 +35,6 @@
 		"types": ["jest"]
 	},
 	"compileOnSave": true,
-	"include": ["src/**/*", "__tests__/**/*"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
 }
