@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"scriptex-socials": "1.10.1",
-		"uuid": "14.0.2"
+		"uuid": "14.0.3"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.0",
