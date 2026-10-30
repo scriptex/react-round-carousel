@@ -66,7 +66,7 @@
 		"jest-environment-jsdom": "30.5.2",
 		"postcss": "8.5.32",
 		"postcss-cli": "12.0.0",
-		"release-it": "21.1.1",
+		"release-it": "21.1.2",
 		"stylelint": "17.16.0",
 		"stylelint-config-recommended": "18.0.0",
 		"ts-jest": "29.4.15",
