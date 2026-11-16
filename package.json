@@ -68,7 +68,7 @@
 		"postcss-cli": "12.0.0",
 		"release-it": "21.1.2",
 		"stylelint": "17.16.0",
-		"stylelint-config-recommended": "18.0.0",
+		"stylelint-config-recommended": "19.0.0",
 		"ts-jest": "29.4.15",
 		"typescript": "6.0.3"
 	},
